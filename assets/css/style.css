@@ -1,0 +1,32 @@
+/* CRIA MARGIN TOP DO NAVBAR QUANDO FIXADO*/
+body::before {
+    display: block;
+    content: '';
+    height: 60px;
+}
+
+/* CONTROLA A LARGURA DO FORMULÁRIO REGISTAR EMAIL*/
+@media all and (min-width: 768px) {
+    .news-input {
+        width: 50% !important;
+    }
+}
+
+
+.nav-mau, .bg-mau {
+    background-color: #00a0d4 !important;
+}
+
+/* DEIXA AS IMAGENS DO CARD COM MESMO TAMALHO*/
+.card-img-top {
+    width: 100%;
+    height: 15vw;
+    object-fit: cover;
+}
+
+#map {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+

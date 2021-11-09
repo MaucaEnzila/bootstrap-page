@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="#">
+    <link href="./assets/css/style.css" rel="stylesheet">
+    <link href="./assets/bootstrapv5.0.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="./assets/bootstrap-icons-1.7.0/bootstrap-icons.css" rel="stylesheet">
+    <link href="./assets/fontawesomev5.15.4/css/all.min.css" rel="stylesheet">
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.css' rel='stylesheet' />
+
+    <title>Bolo</title>
+</head>
+<body>
+
+<!--NAVBAR -->
+    
+<nav class="navbar navbar-expand-lg navbar-dark py-3 nav-mau fixed-top">
+    <div class="container">
+        <a href="#" class="navbar-brand">Cake-Shop</a>
+
+        <button 
+            class="navbar-toggler" 
+            type="button" 
+            data-bs-toggle="collapse" 
+            data-bs-target="#mauca-menu"
+        >
+
+        <span class="navbar-toggler-icon"></span>
+
+        </button>
+
+        <div class="collapse navbar-collapse" id="mauca-menu">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a href="#" class="nav-link text-white">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#learn" class="nav-link text-white">Sobre</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#questions" class="nav-link text-white">Perguntas</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link text-white">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- SHOWCASE -->
+<section class="bg-dark text-light p-5 p-lg-0 pt-lg-5 text-center text-sm-start"><!-- .text-sm-start(ALINHA A ESQUERDA O TEXTO = JUSTIFICA)-->
+    <div class="container">
+        <div class="d-sm-flex align-items-center justify-content-between"><!--.d-sm-flex(COLOCA O QUE ESTÁ NO .container UM AO LADO DO OUTRO )-->
+            <div>
+                <h1><span class="text-warning">Mais Bolo</span> - Faça sua encomenda</h1>
+                <p class="lead my-4">
+                    Diversas opções em bolos caseiros, bolos confeitados para festas e ocasiões especiais, cupcakes, docinhos e muito mais!
+                    MAIS QUE BOLO, mais sabor e carinho em cada pedaço.
+                </p>
+                <button class="btn btn-primary btn-lg m-2" data-bs-toggle="modal" data-bs-target="#mauca-modal">Clique aqui</button>
+
+                <!-- Modal -->
+                <div class="modal fade text-dark" id="mauca-modal" tabindex="-1" aria-labelledby="mauca-modalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <h5 class="modal-title text-dark" id="mauca-modalLabel">Encomenda</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <p class="lead text-dark">
+                                Faça o seu pedido preenchendo o formalário
+                            </p>
+                            <form action="">
+                                <div class="mb-3">
+                                    <label for="first-name" class="col-form-label">
+                                        Nome:
+                                    </label>
+                                    <input type="text" class="form-control" id="first-name">
+
+                                </div>
+                                <div class="mb-3">
+                                    <label for="first-name" class="col-form-label">
+                                        Email:
+                                    </label>
+                                    <input type="text" class="form-control" id="first-name">
+
+                                </div>
+                                <div class="mb-3">
+                                    <label for="first-name" class="col-form-label">
+                                        Telefone:
+                                    </label>
+                                    <input type="text" class="form-control" id="first-name">
+
+                                </div>
+                                <div class="mb-3">
+                                    <label for="first-name" class="col-form-label">
+                                        Whatsapp:
+                                    </label>
+                                    <input type="text" class="form-control" id="first-name">
+
+                                </div>
+                                <div class="mb-3">
+                                    <label for="mensagem" class="col-form-label">
+                                        Messagem do pedido:
+                                    </label>
+                                    <textarea class="form-control" id="mensagem" name="mensagem" rows="4" cols="50">
+                                        
+                                    </textarea> 
+
+                                </div>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                        <button type="button" class="btn btn-primary">Enviar</button>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+
+            </div>
+
+                <img class="img-fluid w-75 d-none d-sm-block mb-3 rounded" src="./assets/img/casamento.jpg" alt=""><!--.d-none(NÃO MOSTRA A IMAGEM, PORÉM .d-sm-block MOSTRA QUANDO RESPONSIVO É md E lg E ESCONDE QUANDO SMALL)-->
+
+        </div>
+    </div>
+</section>
+
+<!-- NEWSLETTER -->
+<section class="bg-mau text-light p-5">
+    <div class="container">
+        <div class="d-md-flex justify-content-between align-items-center">
+            <h3 class="mb-3 mb-md-0">Para mais novidades regista-se</h3>
+            <div class="input-group news-input">
+                <input type="text" class="form-control" placeholder="Email"/>
+                <button class="btn btn-dark btn-lg" type="button">Registar</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--BOXES-->
+<section class="p-5">
+    <div class="container">
+        <div class="row text-center g-4">
+            <div class="col-md">
+                <div class="card bg-dark text-light">
+                    <img src="./assets/img/chocolate.jpg" class="card-img-top mb-3" alt="...">
+                    <div class="card-body text-center">
+                        <h3 class="card-title mb-3">Chocolate</h3>
+                        <p class="card-text">
+                            Bolo de Chocolate com Morangos e recheio cremoso que derrete na boca.
+                        </p>
+                        <a href="#" class="btn btn-primary">Leia mais</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md">
+                <div class="card bg-secondary text-light">
+                    <img src="./assets/img/cake.jpg" class="card-img-top mb-3" alt="...">
+                    <div class="card-body text-center">
+                        <h3 class="card-title mb-3">Hambúrguer</h3>
+                        <p class="card-text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam esse deleniti!
+                        </p>
+                        <a href="#" class="btn btn-primary">Leia mais</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md">
+                <div class="card bg-dark text-light">
+                    <img src="./assets/img/chocolate.jpg" class="card-img-top mb-3" alt="...">
+                    <div class="card-body text-center">
+                        <h3 class="card-title mb-3">Chocolate</h3>
+                        <p class="card-text">
+                            Bolo de Chocolate com Morangos e recheio cremoso que derrete na boca.
+                        </p>
+                        <a href="#" class="btn btn-primary">Leia mais</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="p-5">
+    <div class="container">
+        <div class="row align-items-center justify-content-between">
+            <div class="col-md">
+                <img src="./assets/img/laranja.jpg" alt="" class="img-fluid w-100">
+            </div>
+            <div class="col-md p-5 text-center text-sm-start">
+                <h2>Caldo de laranja</h2>
+                <p class="lead">
+                    O caldo de laranja é um delicioso em bolos, seja bolo de laranja, de chocolate ou outro. Se você está procurando um bolo cremoso e brilhoso de caldo de laranja peça que está no lugar certo!
+                </p>
+                <p class="text-justify">Cremoso de dar água na boca. O caldo foi preparado com suco de laranja natural, açúcar e maisena e deu uma deliciosa sobre mesa. Precisou de muita paciência, pois é necessário deixar o suco de laranja ferver até espessar, e tem segredo para o caldo de laranja não amargar!
+                </p>
+
+                <a href="" class="btn btn-primary mt-3">
+                     Descubra a receita <i class="bi bi-chevron-right"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="p-5 bg-dark text-light" id="learn">
+    <div class="container">
+        <div class="row align-items-center justify-content-between">
+            
+            <div class="col-md p-5 text-center text-sm-start">
+                <h2>Bolo de Aniversário</h2>
+                <p class="lead">
+                    
+
+                </p>
+                <p class="text-justify">Topo para bolo em formato 15 cm de altura x 9 cm de largura, impresso em papel fotográfico 230g, com a frase "Feliz Aniversário". Entregue já com os canudos, conforme foto. 
+ 
+                </p>
+                <p>
+                    
+                    IMPORTANTE: O valor anunciado vale somente para o topo conforme está na foto, caso queira alterações, o valor segue nossa tabela, que é de 250,00 meticais. Favor informar no acto do pedido ou consultar as demais opções no álbum "Topos de Bolo e toppers". 
+                     
+                    
+                </p>
+
+                <p>
+                    Frete não incluso. <br>
+                    
+                        Código do produto: B67528 <br>
+                        Adicionado em: 02/02/2018
+                </p>
+
+                <a href="" class="btn btn-light mt-3">
+                     Descubra a receita <i class="bi bi-chevron-right"></i>
+                </a>
+            </div>
+            <div class="col-md">
+                <img src="./assets/img/corona.jpg" alt="" class="img-fluid">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- QUESTION ACCORDION-->
+<section class="p-5" id="questions">
+    <div class="container">
+
+        <h2 class="text-center mb-4">Perguntas Frequentes</h2>
+
+        <div class="accordion accordion-flush" id="questions">
+
+            <!-- ITEM I -->
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#question-one">
+                  Qual é a vossa localização exacta?
+                </button>
+              </h2>
+              <div id="question-one" class="accordion-collapse collapse text-success"  data-bs-parent="#questions">
+                <div class="accordion-body">Para chegar a um determinado lugar pela primeira vez é preciso ter referências ou o endereço, isso no campo ou na cidade, no entanto, nem sempre temos em nossas mãos instrumentos ou informações para a orientação. Em áreas naturais como as grandes florestas, desertos e oceanos não têm placas ou endereços para informar qual caminho se deve tomar. </div>
+              </div>
+            </div>
+
+            <!-- ITEM II -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#question-two">
+                  Tem feito o serviço de delivery?
+                </button>
+              </h2>
+              <div id="question-two" class="accordion-collapse collapse text-success" aria-labelledby="flush-headingTwo" data-bs-parent="#questions">
+                <div class="accordion-body">Quer receber nossas delícias em casa, no trabalho ou onde estiver? Clique no botão “QUERO” no canto superior direito do site, digite seu BAIRRO, RUA, CELULAR, e confira se há atendimento disponível na sua região.</div>
+              </div>
+            </div>
+
+            <!-- ITEM III -->
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#question-three">
+                    Como funcionam as encomendas?
+                  </button>
+                </h2>
+                <div id="question-three" class="accordion-collapse collapse text-success"  data-bs-parent="#questions">
+                  <div class="accordion-body">Para encomendar, é necessário entrar em contacto com a loja onde deseja retirar o bolo e fazer o pedido. Para bolo de festa é preciso solicitar com pelo menos um dia de antecedência. Os pedidos no nosso site devem ser feitos com 48h de antecedência. Caso queira um bolo para o próprio dia ou dia seguinte contacte a nossa a loja: +258 84 72 88 72 9. As nossas entregas funcionam das 11h às 18h, de segunda a sábado. </div>
+                </div>
+              </div>
+  
+              <!-- ITEM IV -->
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingTwo">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#question-four">
+                    Vocês fazem bolos diets e/ou light?
+                  </button>
+                </h2>
+                <div id="question-four" class="accordion-collapse collapse text-success" aria-labelledby="flush-headingTwo" data-bs-parent="#questions">
+                  <div class="accordion-body">Sim, temos o Bolo de Banana com passas, que não contém açúcar nem adoçante. O sabor adocicado é conferido pelas bananas trituradas e pelas uvas.</div>
+                </div>
+              </div>
+
+            <!-- ITEM V -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#question-five">
+                  Quais formas de pagamentos são aceites? conta Móvel, M-pesa...!
+                </button>
+              </h2>
+              <div id="question-five" class="accordion-collapse collapse text-success" aria-labelledby="flush-headingThree" data-bs-parent="#questions">
+                <div class="accordion-body">
+                    Dinheiro, cartão de débito, M-pesa, crédito*, Conta Móvel e cheque. Algumas unidades já possuem CAKE PAY e MAUCADIGITAL, ambos na modalidade de QR CODE.<br>
+                    
+                    <span class="fst-italic">*Algumas unidades não aceitam cartões de crédito, verifique com antecedência.</span>
+                    </div>
+              </div>
+            </div>
+          </div>
+    </div>
+</section>
+
+<section id="instructors" class="p-5 bg-mau">
+    <div class="container">
+        <h2 class="text-center text-white">Nossa Equipe!</h2>
+        <p class="lead text-center text-white mb-5">
+
+        </p>
+        <div class="row g-4">
+            <div class="col-md-6 col-lg-3">
+                <div class="card bg-light">
+                    <div class="card-body text-center">
+                        <img src="https://randomuser.me/api/portraits/men/11.jpg" alt="" class="rounded-circle mb-3">
+                        <h3 class="card-title mb3">Emerson Mauca</h3>
+                        <p class="card-text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, labore omnis. Debitis minima voluptatem cumque!
+                        </p>
+                        <a href=""><i class="bi bi-twitter text-dark mx-1"></i></a>
+                        <a href=""><i class="bi bi-facebook text-dark mx-1"></i></a>
+                        <a href=""><i class="bi bi-linkedin text-dark mx-1"></i></a>
+                        <a href=""><i class="bi bi-instagram text-dark mx-1"></i></a>
+                        <a href=""><i class="bi bi-whatsapp text-dark mx-1"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="card bg-light">
+                    <div class="card-body text-center">
+                        <img src="https://randomuser.me/api/portraits/women/11.jpg" alt="" class="rounded-circle mb-3">
+                        <h3 class="card-title mb3">Chaquila Tomé</h3>
+                        <p class="card-text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, labore omnis. Debitis minima voluptatem cumque!
+                        </p>
+                        <a href=""><i class="bi bi-twitter text-dark mx-1"></i></a>
+                        <a href=""><i class="bi bi-facebook text-dark mx-1"></i></a>
+                        <a href=""><i class="bi bi-linkedin text-dark mx-1"></i></a>
+                        <a href=""><i class="bi bi-instagram text-dark mx-1"></i></a>
+                        <a href=""><i class="bi bi-whatsapp text-dark mx-1"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="card bg-light">
+                    <div class="card-body text-center">
+                        <img src="https://randomuser.me/api/portraits/women/2.jpg" alt="" class="rounded-circle mb-3">
+                        <h3 class="card-title mb3">Marcela Manuel</h3>
+                        <p class="card-text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, labore omnis. Debitis minima voluptatem cumque!
+                        </p>
+                        <a href=""><i class="bi bi-twitter text-dark mx-1"></i></a>
+                        <a href=""><i class="bi bi-facebook text-dark mx-1"></i></a>
+                        <a href=""><i class="bi bi-linkedin text-dark mx-1"></i></a>
+                        <a href=""><i class="bi bi-instagram text-dark mx-1"></i></a>
+                        <a href=""><i class="bi bi-whatsapp text-dark mx-1"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="card bg-light">
+                    <div class="card-body text-center">
+                        <img src="https://randomuser.me/api/portraits/women/16.jpg" alt="" class="rounded-circle mb-3">
+                        <h3 class="card-title mb3">Priscylla Mauca</h3>
+                        <p class="card-text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, labore omnis. Debitis minima voluptatem cumque!
+                        </p>
+                        <a href=""><i class="bi bi-twitter text-dark mx-1"></i></a>
+                        <a href=""><i class="bi bi-facebook text-dark mx-1"></i></a>
+                        <a href=""><i class="bi bi-linkedin text-dark mx-1"></i></a>
+                        <a href=""><i class="bi bi-instagram text-dark mx-1"></i></a>
+                        <a href=""><i class="bi bi-whatsapp text-dark mx-1"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="p-5" id="contact">
+    <div class="container">
+        <div class="row g-4">
+            <div class="col-md">
+                <h2 class="text-center mb-4">Nossos Contactos</h2>
+                <ul class="list-group list-group-flush lead">
+                    <li class="list-group-item">
+                        <span class="fw-bold">Localização Principal:</span> Av. 25 de Setembro, nº 125, Maputo
+                    </li>
+                    <li class="list-group-item">
+                        <i class="bi bi-telephone-inbound"></i> <span class="fw-bold">Telefone:</span>  86 74 88 72 9
+                    </li>
+                    <li class="list-group-item">
+                        <i class="bi bi-whatsapp"></i> <span class="fw-bold">Whatsapp:</span>  84 72 88 72 9
+                    </li>
+                    <li class="list-group-item">
+                        <i class="bi bi-envelope"></i> <span class="fw-bold">email:</span>  maucaeme@gmail.com
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md">
+                <div id='map'>
+            </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="p-5 bg-dark text-light text-center position-relative">
+    <div class="container">
+        <p class="lead">Todos os Direitos Reservados &copy; 2021 Cake-Shop</p>
+        <a href="#" class="position-absolute bottom-0 end-0 p-5"><i class="bi bi-arrow-up-circle h1"></i></a>
+    </div>
+
+</footer>
+
+<script src="./assets/bootstrapv5.0.2/js/bootstrap.min.js" rel="stylesheet"></script>
+<script src='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.js'></script>
+<script>
+    mapboxgl.accessToken = 'pk.eyJ1IjoibWF1Y2EtMjAyMSIsImEiOiJja3ZtNTNxODg1NnBuMnJva2k5ZDh0NHBtIn0.bAoSlrH9yu_MW6Lv6_P7Tw';
+    var map = new mapboxgl.Map({
+    container: 'map',
+    style: 'mapbox://styles/mapbox/streets-v11',
+    center: [ 32.5571921, -25.9415665],
+    zoom: 14,
+    });
+</script>
+
+</body>
+</html>
